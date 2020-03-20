@@ -9,20 +9,24 @@
 
 <style>
 body {
+	background: url(phpform.png) no-repeat;
+	background-size: cover;
+	font-family: sans-serif;
 	text-align: center;
-	color: darkblue;
-	margin: 40px;
+	font-size: 25px;
 }
 .container {
-	background-color: #f2f2f2;
-	border-radius: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;*/
-	width: auto;
-	margin-left: 20px;
- 	margin-right: 20px;
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: darkblue;
+	margin: 30px;
 }
 input {
+	font-size: 20px;
+	background: none;
 	border: 2px solid #ccc;
 	height: 40px;
 	border-radius: 5px;
@@ -30,34 +34,32 @@ input {
 	width: 50%;
 }
 button {
-	position: absolute;
 	color: white;
 	height:30px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	background-color: grey;
+	margin-bottom: 30px;
 }
+button:hover {
+  background-color: darkblue;
+}
+/*h1 {
+	text-decoration: underline;
+}*/
 </style>
 
 </head>
 <body>
-	<h1 style=>PHP<br>Contact Form</h1>
 	<div class="container">
+		<h1>Contact Form</h1>
 		<form action= "contact.php" method="POST">
-		<label for = "name">Name:</label>
-		<input type = "text" name ="name" required>
-
-		<label for = "email"><br><br>Email:</label>
-		<input type = "text" name ="email" required>
-
-		<label for = "subject"><br><br>Subject:</label>
-		<input type = "text" name ="subject" required>
-
-		<label for = "message"><br><br>Message:</label>
-		<input type = "text" name ="message" size="40" style="height:200px" required>
-
-		<label for = ""><br></label>
-		<button type='submit' name="submit"><b>Submit<b></button>
+		<input type = "text" name ="name" placeholder="  Name" required>
+		<input type = "text" name ="email" placeholder="  Email" required>
+		<input type = "text" name ="subject" placeholder="  Subject" required>
+		<input type = "text" name ="message" size="40" placeholder="  Write Your Message Here" style="height:200px" required>
+		<label for =""><br></label>
+		<button type='submit' name="submit" placeholder="Submit"><b>Submit<b></button>
 		</form>
 	</div>
 </body>
