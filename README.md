@@ -1,6 +1,8 @@
 # php-Form
 Contact form written in php
 
-Added png file showing SQL code for creating form database table.
+Included in this Repository is a PNG file showing the SQL code used for creating the Form Database.
+
+Form Image Below:
 
 ![](contactform.png)
